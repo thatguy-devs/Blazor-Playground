@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWebAssembly", "src\BlazorWebAssembly\BlazorWebAssembly.csproj", "{5EFBC02B-6A26-4E02-9F44-A46712D8E522}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorPlaygroundOne", "src\BlazorPlaygroundOne\BlazorPlaygroundOne.csproj", "{5EFBC02B-6A26-4E02-9F44-A46712D8E522}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{224F37F0-FB4B-43BC-891A-BA5EBC28BE5A}"
 EndProject

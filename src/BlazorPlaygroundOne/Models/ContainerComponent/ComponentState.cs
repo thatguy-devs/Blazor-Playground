@@ -1,4 +1,4 @@
-﻿namespace BlazorWebAssembly.Models.ContainerComponent
+﻿namespace BlazorPlaygroundOne.Models.ContainerComponent
 {
     public enum ComponentState
     {

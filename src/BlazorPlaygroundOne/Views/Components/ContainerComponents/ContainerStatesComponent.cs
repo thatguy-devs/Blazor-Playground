@@ -1,7 +1,7 @@
-﻿using BlazorWebAssembly.Models.ContainerComponent;
+﻿using BlazorPlaygroundOne.Models.ContainerComponent;
 using Microsoft.AspNetCore.Components;
 
-namespace BlazorWebAssembly.Views.Components.ContainerComponents
+namespace BlazorPlaygroundOne.Views.Components.ContainerComponents
 {
 	public partial class ContainerStatesComponent
 	{

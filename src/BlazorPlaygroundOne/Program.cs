@@ -1,4 +1,4 @@
-using BlazorWebAssembly;
+using BlazorPlaygroundOne;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
