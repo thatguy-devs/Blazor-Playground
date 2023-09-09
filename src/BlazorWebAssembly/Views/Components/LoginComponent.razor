@@ -1,0 +1,52 @@
+﻿@inject ILogger<Index> Logger
+
+<Card class="w-[350px]">
+	<CardHeader>
+		<CardTitle>
+			Sign in to your account
+		</CardTitle>
+		<CardDescription>
+			Not a member? <InlineLink href="/docs/components/card">Start a 7 day free trial</InlineLink>
+		</CardDescription>
+	</CardHeader>
+	<CardContent>
+		<EditForm Model="Form">
+			<div class="grid w-full items-center gap-4">
+				<div class="flex flex-col space-y-1.5">
+					<label for="email">Email</label>
+					<InputText @bind-Value="Form.Email" id="email" />
+				</div>
+				<div class="flex flex-col space-y-1.5">
+					<label for="password">Password</label>
+					<InputText @bind-Value="Form.Password" id="password" />
+				</div>
+			</div>
+			<div class="flex flex-col space-y-1.5 mt-6">
+				<Button>Sign In</Button>
+			</div>
+		</EditForm>
+	</CardContent>
+	<CardFooter>
+		Don't' have an account?&nbsp;
+		<InlineLink href="/docs/components/card">Sign up</InlineLink>
+	</CardFooter>
+</Card>
+
+@code {
+	public LoginModel Form { get; set; }
+
+	protected override void OnInitialized() => Form ??= new();
+
+	private void Submit()
+	{
+		Logger.LogInformation("Model.Id = {Id}", Form?.Id);
+	}
+
+	public class LoginModel
+	{
+		public string? Id { get; set; }
+		public string Name { get; set; }			    
+		public string Email { get; set; }
+		public string Password { get; set; }
+	}
+}
