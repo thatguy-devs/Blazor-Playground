@@ -10,7 +10,7 @@
 		</CardDescription>
 	</CardHeader>
 	<CardContent>
-		<EditForm Model="Form">
+		<EditForm Model="Form" OnValidSubmit="Submit" id="login-form">
 			<div class="grid w-full items-center gap-4">
 				<div class="flex flex-col space-y-1.5">
 					<label for="email">Email</label>
@@ -22,7 +22,7 @@
 				</div>
 			</div>
 			<div class="flex flex-col space-y-1.5 mt-6">
-				<Button>Sign In</Button>
+				<Button type="submit" form="login-form">Sign In</Button>
 			</div>
 		</EditForm>
 	</CardContent>
@@ -39,7 +39,7 @@
 
 	private void Submit()
 	{
-		Logger.LogInformation("Model.Id = {Id}", Form?.Id);
+		Logger.LogInformation("Model.Email = {Email}", Form?.Email);
 	}
 
 	public class LoginModel
